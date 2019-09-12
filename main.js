@@ -34,9 +34,10 @@ for (i = 1; i <= 5; i++) {
 /* Wiring up the Darken/Lighten button */
 
 //why e?
-function showOverlay(e) {
+function showOverlay (e) {
   var status = e.target.getAttribute('class');
   if (status == "Darken" ){
+    var lighten = "Lighten"
     btn.setAttribute('class', lighten);
     btn.textContent = lighten;
     overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
